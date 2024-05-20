@@ -1,0 +1,266 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo h1 {
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+}
+
+.navbar-links ul li {
+  margin: 0 20px;
+}
+
+.navbar-links ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-links ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.5s ease;
+}
+
+.navbar-links ul li a:hover::after {
+  width: 100%;
+}
+.navbar-toggle {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+.navbar-icons {
+  display: flex;
+}
+
+
+.icon {
+  margin-right: 10px;
+  color: #fff;
+}
+
+
+.homepage {
+  background-image: url('https://res.cloudinary.com/ddblhklps/image/upload/v1715886344/layer_96_pjl7lb.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.homepage p {
+  font-size: 5.2em; 
+}
+.homepage h4 {
+  color: blue;
+  margin-bottom: 250px;
+}
+.pages {
+  background-image: url('https://res.cloudinary.com/ddblhklps/image/upload/v1716049226/Screenshot_2024-05-18_213534_becfy6.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.features {
+  background-image: url('https://res.cloudinary.com/ddblhklps/image/upload/v1716050383/Screenshot_2024-05-18_214242_vydbux.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  color: #fff;
+  text-align: center;
+}
+.extensions {
+  background-image: url('https://res.cloudinary.com/ddblhklps/image/upload/v1716049825/Screenshot_2024-05-18_214323_zmo573.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  color: #fff;
+  text-align: center;
+}
+
+.tutorials{
+  background-image: url('https://res.cloudinary.com/ddblhklps/image/upload/v1716050256/Screenshot_2024-05-18_220712_eso1cy.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  color: #fff;
+  text-align: center;
+}
+
+/* .contact_us {
+  
+} */
+
+
+
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff; 
+}
+
+.contact-form {
+  background-color: #000; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 22px); 
+  padding: 10px;
+  border: 1px solid #fff; 
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff; 
+  color: #000; 
+  margin-top: 5px; 
+}
+
+textarea {
+  height: 80px; 
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 400px) {
+  .contact-container {
+    padding: 10px;
+  }
+}
